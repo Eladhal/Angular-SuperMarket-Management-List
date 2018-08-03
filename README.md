@@ -4,4 +4,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm install` to build the project to download dependencies. 
+The server fot this projected located at Super List Server repo.
