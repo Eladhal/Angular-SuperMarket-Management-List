@@ -1,0 +1,7 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "Nav">
+  <div *ngIf="navigation?.showNav" class="Navbuttons">
+    <a mat-raised-button routerLink="/super-branch" color="primary" >Back</a>
+    <a *ngIf="navigation?.showTopBtn" href="{{getRefForTopClick()}}" mat-raised-button id = "Top"
+       color="primary">TOP</a>
+  </div>
+</nav>

@@ -1,0 +1,37 @@
+#add {
+  flex-direction: row;
+  margin-left: 5px;
+
+}
+#edit {
+  flex-direction: row;
+  margin-left: 0px;
+}
+
+#delete {
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+#search {
+  display: flex;
+  flex-direction: row;
+}
+searchInput{
+  flex-direction: row;
+}
+#searchBtn {
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+#Top{
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;;
+}
+
+
+

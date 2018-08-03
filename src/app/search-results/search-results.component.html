@@ -1,0 +1,4 @@
+<div class = "Content">
+  <img *ngIf="noResults" src="../../assets/noResults.png" alt="">
+  <app-super-item *ngFor="let super of filteredSupers" [superData]="super"></app-super-item>
+</div>

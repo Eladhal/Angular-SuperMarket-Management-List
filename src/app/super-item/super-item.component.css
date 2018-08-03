@@ -1,0 +1,68 @@
+.comp {
+  margin-left: 2px;
+  padding-left: 0;
+  margin-bottom: 2px;
+  box-shadow: 1px 1.5px 6px hsl(0, 0%, 85%);
+  margin-bottom:8px;
+}
+
+.back {
+  margin-left: 10px;
+}
+.button {
+  width: 65px;
+  height: 35px;
+  background: lightblue;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+img {
+  width: 80px;
+  float: left;
+  height: 100%;
+  padding-bottom: 0.1px;
+}
+
+#empImg{
+  width: 50px;
+  float: left;
+  height: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.Topic{
+  background-color: hsla(20, 5%, 50%, 0.1);
+  margin-bottom: 5px;
+  border: 0.5px outset hsla(20, 5%, 50%, 0.1);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.AdminInfo,#Employee{
+  display: flex;
+  flex-direction: row;
+  border: 0.5px outset hsla(20, 5%, 50%, 0.1);
+}
+#numOfEmployees {
+  margin-left: 30px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+#Owner,#Size{
+  width: 60%;
+  border: 0.5px outset hsla(20, 5%, 50%, 0.1);
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding-top: 12px;
+}
+#Size{
+  width: 30%;
+}
+
+

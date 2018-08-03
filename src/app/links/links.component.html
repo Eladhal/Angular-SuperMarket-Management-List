@@ -1,0 +1,13 @@
+<div>
+  <ul>
+    <li *ngFor="let super of listOfSuper">
+      <a routerLink="super-branch/{{super.id}}">
+        <img src="../../assets/{{super.brand}}.png" />
+        <h3>{{super.brand}}</h3>
+        <p>Owned by {{super.owner}}</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+

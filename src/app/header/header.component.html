@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id ="Top">
+    <div *ngIf="navigation?.searchBtn" id = "search">
+      <input class="form-control searchInput"  placeholder="Search" aria-label="Search" #search>
+      <button id = "searchBtn" mat-raised-button color="primary" (click)="SearchBtn(search.value)">Search</button>
+    </div>
+  <button *ngIf="navigation?.addBtn" mat-raised-button id ="add" color="primary" (click)="addSuper()" >Add</button>
+  <button *ngIf="navigation?.editBtn" mat-raised-button color="primary" (click)="EditSuper()" >Edit</button>
+  <button *ngIf="navigation?.deleteBtn" mat-raised-button id ="delete" color="primary" (click)="DeleteBtn()" >Delete</button>
+</nav>
+
+
+
+
+
+

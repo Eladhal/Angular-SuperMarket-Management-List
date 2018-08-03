@@ -1,0 +1,42 @@
+<h2 mat-dialog-title>Add a super market branch</h2>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Owner Name" #owner value="{{data?.selectedSuper?.owner}}">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-select placeholder="super market brand" #superBrand value="{{data?.selectedSuper?.brand}}">
+      <mat-option *ngFor="let super of superNames" [value]=super >
+        {{ super }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-select placeholder="super market size" #size value="{{data?.selectedSuper?.size}}">
+      <mat-option *ngFor="let size of sizes" [value]=size >
+        {{ size }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Number of employees" type="number"
+           #numOfEmployees value="{{data?.selectedSuper?.numOfEmployees}}">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Branch info" #info value="{{data?.selectedSuper?.info}}"></textarea>
+  </mat-form-field>
+</form>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button"(click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary"
+          (click)="save(owner.value,superBrand.value,size.value,
+                         numOfEmployees.value,info.value)">Save
+  </button>
+</mat-dialog-actions>
+
+
